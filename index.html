@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Weather Dashboard</title>
 </head>
 <body>
-    
+    <header class="bg-dark text-light text-center p-4">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container mw-100 p-0">
+    <div class="row no-gutters">
+        <div class="col-lg-3 min-vh-100 bg-dark text-light d-flex flex-column p-1">
+            <h4 class="">Enter City Name:</h4>
+        <div class="input-group mb-3">
+            <input type="text" id="city-name" class="form-control mt-2" placeholder="City Name" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary btn-primary mt-2" type="button" id="button-addon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                    </button>
+                </div>
+        </div>
+        <div class="list-group"></div>
+    </div>
+    <div class="col-lg-9">
+        <div class="main-forecast d-flex justify-content m-3 p-3 border rounded"></div>
+        <div class="five-forecast mt-6" style="display: flex;">
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/weather.js"></script>
 </body>
-</html>
+</html> 
